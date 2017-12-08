@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="context-path" th:content="@{/}"/>
+    <title>天泰云题库</title>
+    <!-- 
+    <link th:href="@{/bootstrap/3.3.5/css/bootstrap.css}" type="text/css" rel="stylesheet" />
+    <link th:href="@{/css/bootstrap4.css}" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" th:src="@{/jquery/jquery-1.12.4.min.js}"></script>
+    <script type="text/javascript" th:src="@{/bootstrap/3.3.5/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/main.js}"></script>   -->
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        .navbar-brand {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div th:fragment="nav">
+        <h1>导航条</h1>
+    </div>
+    <div layout:fragment="content"></div>
+
+</div>
+</body>
+</html>
